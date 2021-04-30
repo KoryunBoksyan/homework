@@ -4,99 +4,100 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Template</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>My Blog</title>
 </head>
 <body>
-  <fieldset style="width: 50%; margin: auto">
-    <legend><h2>CV Template</h2></legend>
-    <figure>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubwvPC5_AvdjPXiW9vjzAsZ7BeH3SXTp57w&usqp=CAU" alt="photo">
-      <figcaption><h2>John Smith</h2></figcaption>
-    </figure>
-    <hr>
-    <address style="font-style: normal;"><small>335 Name Street, JavaScript, Town: Yerevan, N2h 3Y6</small></address>
-    <ul>
-      <li><a href="emailaddress@uwaterloo.com">emailaddress@uwaterloo.com</a></li>
-      <li><a href="github.com">github.com</a></li>
-      <li><a href="linkedin.com">linkedin.com</a></li>
+  <header class="header">
+    <div class="header__top">
+      <h1>My Website</h1>
+    </div>
+    <div class="header__bottom">
+      <h2>Awesome Template</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+    </div>
+  </header>
+  <nav>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Link</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Link</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Link</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Link</a></li>
     </ul>
-    <hr>
-    <h2>Work Experience</h2>
-    <hr>
-    <table style="width: 100%; margin: auto;">
-      <tbody>
-        <tr>
-          <td><h2><ins>Start > End Year</ins></h2></td>
-          <td>
-            <h2>Job Title One</h2>
-            <address><small>Company Name, Address, City Province</small></address>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td><h2><ins>Start > End Year</ins></h2></td>
-          <td>
-            <h2>Job Title Two</h2>
-            <address><small>Company Name, Address, City Province</small></address>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <h2>About</h2>
-    <p><strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. <ins>Alias</ins> velit voluptate repellat minus ratione est sint quod cupiditate, ad odio quis, atque nesciunt quibusdam itaque fugiat temporibus eaque porro consectetur.ad odio quis, atque nesciunt <em>quibusdam</em> itaque
-    </p>
-    <hr>
-    <h2>Skills</h2>
-    <table style="width: 100%">
-      <tbody>
-        <tr>
-          <td>
-            <ul>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-              <li>list</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </fieldset>
+  </nav>
+  <main class="main__content">
+    <aside class="blog__posts">
+      <article class="blog__post">
+        <h3>Blog Post 1</h3>
+        <small>Posted by Brand on July 15</small>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
+        <a href="#">Read More</a>
+      </article>
+      <article class="blog__post">
+        <h3>Blog Post 1</h3>
+        <small>Posted by Brand on July 15</small>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
+        <a href="#">Read More</a>
+      </article>
+      <article class="blog__post">
+        <h3>Blog Post 1</h3>
+        <small>Posted by Brand on July 15</small>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
+        <a href="#">Read More</a>
+      </article>
+    </aside>
+    <section class="main__section">
+      <div class="main__section-item">
+        <h2>Title Heading 1</h2>
+        <figure>
+          <img src="./images/img1.jpg" alt="img1">
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
+          </figcaption>
+        </figure>
+      </div>
+      <hr>
+      <div class="main__section-item">
+        <h2>Title Heading 2</h2>
+        <figure>
+          <img src="./images/img2.jpg" alt="img2">
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <section class="info__section">
+    <form class="form">
+      <div class="form__item">
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" placeholder="Your name..">
+      </div>
+      <div class="form__item">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Your last name..">
+      </div>
+      <div class="form__item">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="Armenia">Armenia</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+        </select>
+      </div>
+      <div class="form__item">
+        <label for="subject">Subject</label>
+        <textarea name="subject" id="subject" placeholder="Write something.." cols="30" rows="10"></textarea>
+      </div>
+      <div><button class="btn">Submit</button></div>
+    </form>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24390.21008937374!2d44.51866678575186!3d40.16953497065143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcfa28499691%3A0x2bde14d127166c74!2sRepublic%20Square!5e0!3m2!1sen!2s!4v1619757031756!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright © 2021, My Website</p>
+  </footer>
 </body>
 </html>
