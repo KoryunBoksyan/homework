@@ -1,103 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>My Blog</title>
+  <title>BR Architects</title>
 </head>
 <body>
   <header class="header">
     <div class="header__top">
-      <h1>My Website</h1>
+      <a href="#"><b>BR</b>Architects</a>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="header__bottom">
-      <h2>Awesome Template</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+    <div class="container">
+      <div class="header__bottom">
+        <h1 class="header__title"><span><strong>BR</strong></span>Architects</h1>
+      </div>
     </div>
   </header>
-  <nav>
-    <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#">Link</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Link</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Link</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Link</a></li>
-    </ul>
-  </nav>
-  <main class="main__content">
-    <aside class="blog__posts">
-      <article class="blog__post">
-        <h3>Blog Post 1</h3>
-        <small>Posted by Brand on July 15</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
-        <a href="#">Read More</a>
-      </article>
-      <article class="blog__post">
-        <h3>Blog Post 1</h3>
-        <small>Posted by Brand on July 15</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
-        <a href="#">Read More</a>
-      </article>
-      <article class="blog__post">
-        <h3>Blog Post 1</h3>
-        <small>Posted by Brand on July 15</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
-        <a href="#">Read More</a>
-      </article>
-    </aside>
-    <section class="main__section">
-      <div class="main__section-item">
-        <h2>Title Heading 1</h2>
-        <figure>
-          <img src="./images/img1.jpg" alt="img1">
-          <figcaption>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
-          </figcaption>
-        </figure>
-      </div>
-      <hr>
-      <div class="main__section-item">
-        <h2>Title Heading 2</h2>
-        <figure>
-          <img src="./images/img2.jpg" alt="img2">
-          <figcaption>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quo accusamus, deleniti, fugiat voluptatum adipisci incidunt tempore nulla maiores odio deserunt dicta sequi ullam numquam autem totam, quam omnis unde</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-  </main>
-  <section class="info__section">
-    <form class="form">
-      <div class="form__item">
-        <label for="name">First Name</label>
-        <input type="text" name="name" id="name" placeholder="Your name..">
-      </div>
-      <div class="form__item">
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Your last name..">
-      </div>
-      <div class="form__item">
-        <label for="country">Country</label>
-        <select name="country" id="country">
-          <option value="Armenia">Armenia</option>
-          <option value="USA">USA</option>
-          <option value="Canada">Canada</option>
-        </select>
-      </div>
-      <div class="form__item">
-        <label for="subject">Subject</label>
-        <textarea name="subject" id="subject" placeholder="Write something.." cols="30" rows="10"></textarea>
-      </div>
-      <div><button class="btn">Submit</button></div>
-    </form>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24390.21008937374!2d44.51866678575186!3d40.16953497065143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcfa28499691%3A0x2bde14d127166c74!2sRepublic%20Square!5e0!3m2!1sen!2s!4v1619757031756!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </section>
-  <footer>
-    <p>Copyright © 2021, My Website</p>
+  <div class="container">
+    <main class="main">
+      <section class="projects">
+        <h2 class="projects__title">Projects</h2>
+        <div class="gallery">
+          <div class="gallery__item"><img src="./images/proj1.jpg" alt="house"><span>Summer House</span></div>
+          <div class="gallery__item"><img src="./images/proj2.jpg" alt="house"><span>Brick House</span></div>
+          <div class="gallery__item"><img src="./images/proj3.jpg" alt="house"><span>Renovated</span></div>
+          <div class="gallery__item"><img src="./images/proj4.jpg" alt="house"><span>Barn House</span></div>
+          <div class="gallery__item"><img src="./images/proj2.jpg" alt="house"><span>Summer House</span></div>
+          <div class="gallery__item"><img src="./images/proj1.jpg" alt="house"><span>Brick House</span></div>
+          <div class="gallery__item"><img src="./images/proj4.jpg" alt="house"><span>Renovated</span></div>
+          <div class="gallery__item"><img src="./images/proj3.jpg" alt="house"><span>Barn House</span></div>
+        </div>
+      </section>
+      <section class="about">
+        <h2 class="about__title">About</h2>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="about__info info">
+          <div class="info__item">
+            <img src="./images/john.jpg" alt="john">
+            <p class="info__name">John Doe</p>
+            <p class="info__profession">CEO & Founder</p>
+            <p class="info__text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <a class="info__button" href="#">Contact</a>
+          </div>
+          <div class="info__item">
+            <img src="./images/jane.jpg" alt="jane">
+            <p class="info__name">Jane Doe</p>
+            <p class="info__profession">Architect</p>
+            <p class="info__text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <a class="info__button" href="#">Contact</a>
+          </div>
+          <div class="info__item">
+            <img src="./images/mike.jpg" alt="mike">
+            <p class="info__name">Mike Ross</p>
+            <p class="info__profession">Architect</p>
+            <p class="info__text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <a class="info__button" href="#">Contact</a>
+          </div>
+          <div class="info__item">
+            <img src="./images/dan.jpg" alt="dan">
+            <p class="info__name">Dan Star</p>
+            <p class="info__profession">Architect</p>
+            <p class="info__text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <a class="info__button" href="#">Contact</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h2 class="contact__title">Contact</h2>
+        <p class="contact__text">Lets get in touch and talk about your next project.</p>
+        <form class="contact__form">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <input type="text" name="comment" placeholder="Comment" required>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      <section class="map">
+        <img src="./images/map.jpg" alt="map">
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <p class="footer__text">Powered by <a class="footer__link" href="#">w3.css</a></p>
   </footer>
 </body>
 </html>
