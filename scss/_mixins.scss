@@ -1,7 +1,18 @@
-@mixin title($m: 20px) {
-  font-weight: normal;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+@mixin subtitle($m: 40px) {
+  color: $dark;
+  font-weight: 500;
+  font-size: 36px;
   margin-bottom: $m;
+}
+
+@mixin btn($bg) {
+  display: inline-block;
+  background-color: $bg;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+  &:hover {
+    color: #000;
+    background-color: #ccc;
+  }
 }

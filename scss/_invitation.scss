@@ -1,0 +1,17 @@
+.invitation {
+  background-image: url('./../images/flowers.jpg');
+  background-repeat: no-repeat;
+  // background-position: 0 0;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 200px 10px;
+  
+  &__title {
+    margin-bottom: 40px;
+    font-size: 64px;
+  }
+  &__text {
+    font-size: 30px;
+  }
+}
