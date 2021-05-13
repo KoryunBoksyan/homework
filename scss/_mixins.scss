@@ -1,7 +1,6 @@
-@mixin subtitle($m: 40px) {
-  color: $dark;
-  font-weight: 500;
-  font-size: 36px;
+@mixin subtitle($m: 25px) {
+  color: $text_color;
+  font-weight: 700;
   margin-bottom: $m;
 }
 
@@ -14,5 +13,33 @@
   &:hover {
     color: #000;
     background-color: #ccc;
+  }
+}
+
+@mixin percent($padding, $backgroundColor, $color: white, $fontSize: 15px) {
+  // margin: 10px;
+  border-radius: $percentRadius;
+  // box-sizing: border-box;
+  // background-color: #f1f1f1;
+  background: $backgroundColor;
+  .percent_value {
+      width: 50%;
+      display: inline-block;
+      border-radius: $percentRadius;
+      color: $color;
+      padding: $padding;
+      font-size: $fontSize;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+      background-color: $backgroundColor;
+  }
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    box-shadow: $top $left $blur $color;
   }
 }

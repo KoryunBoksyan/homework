@@ -1,47 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "variables"; 
 @import "mixins";
-
-*,
-*:before,
-*:after {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
-}
-
-html, 
-body {
-  height: 100%;
-  font-family: $mainff;
-  background-color: $pink;
-  font-size: 16px;
-  font-weight: 400;
-}
-a {
-  text-decoration: none;
-} 
-h2 {
-  font-weight: 400;
-}
-
-.wrapper {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-.container {
-  max-width: 950px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-@import "header";
-@import "info"; 
-@import "details";
-@import "invitation";
-@import "wedding";
-@import "hope";
+@import "style";
+  
+@import "leftColumn";
+@import "workExperience";
 @import "footer";
+
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto 100px;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  grid-template-areas: 
+  "left__column work__experience"
+  "left__column education"
+  "footer footer";
+}
+
+@each $block in $blocks {
+  .#{$block} {
+    grid-area: $block;
+    background-color: #fff;
+    @include box-shadow(1px, 2px, 9px, #333);
+  }
+}
+
+.footer {
+  grid-area: footer;
+  background-color: $main_color; 
+}
+
+@media (max-width: 601px) {
+  .main__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    grid-template-areas: 
+    "left__column"
+    "work__experience"
+    "education"
+    "footer";
+  }
+}
+
+
 

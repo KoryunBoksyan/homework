@@ -1,177 +1,184 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 *,
 *:before,
 *:after {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 0;
-  box-sizing: border-box; }
+  border: 0; }
 
 html,
 body {
-  height: 100%;
-  font-family: "Raleway", sans-serif;
-  background-color: #ffdddd;
-  font-size: 16px;
-  font-weight: 400; }
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #f1f1f1; }
 
 a {
   text-decoration: none; }
 
-h2 {
-  font-weight: 400; }
+ul {
+  list-style: none; }
 
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column; }
+i {
+  margin-right: 20px;
+  color: #009688; }
+
+h2, h3 {
+  color: #757575;
+  font-weight: 700;
+  margin-bottom: 25px; }
 
 .container {
-  max-width: 950px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto; }
 
-.header {
-  padding: 10px 15px;
-  background-color: rgba(255, 255, 255, 0.5);
-  position: fixed;
+.line {
   width: 100%;
-  bottom: 0; }
-  .header__menu ul {
-    display: flex; }
-  .header:hover {
-    background-color: #fff; }
+  height: 1px;
+  background-color: lightgray;
+  margin-bottom: 20px; }
 
-.menu__item {
-  list-style: none;
-  width: 25%;
-  text-align: center; }
+.text {
+  color: #757575;
+  margin-bottom: 15px; }
 
-.menu__link {
-  display: inline-block;
+.calendar {
+  font-size: 16px;
+  color: #009688;
+  margin-bottom: 25px; }
+
+.column__photo {
+  background: url("./../images/jane.jpg") center/cover no-repeat; }
+
+.column__title {
+  padding: 300px 20px 20px;
+  font-weight: 400;
+  font-size: 30px; }
+
+.column__main {
+  padding: 20px 20px; }
+
+.menu li {
+  margin-bottom: 20px;
+  color: #757575; }
+
+.column__skills,
+.column__languages {
+  padding: 0px 20px 10px; }
+
+.skills__item {
+  margin-bottom: 15px; }
+  .skills__item p {
+    margin-bottom: 15px; }
+
+progress {
+  appearance: none;
+  position: relative;
   width: 100%;
-  color: #000;
-  padding: 8px 16px; }
-  .menu__link:hover {
-    background-color: grey; }
-  .menu__link--black:hover {
-    background-color: #000;
-    color: #fff; }
+  height: 20px; }
+  progress::before {
+    content: attr(value) "%";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px; }
+  progress::-webkit-progress-bar {
+    background-color: #ccc;
+    border-radius: 50px; }
+  progress::-webkit-progress-value {
+    background-color: #009688;
+    border-radius: 50px; }
 
-.info {
-  min-height: 100vh;
-  background-image: url("./../images/wedding_couple.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .info__block {
-    font-weight: 300;
-    letter-spacing: 4px;
-    font-size: 30px;
-    text-align: center;
-    color: #fff; }
-  .info__title {
-    font-size: 64px;
-    margin-bottom: 30px; }
-  .info__text {
-    margin-bottom: 20px; }
+.progress__1::before {
+  left: 45%; }
 
-.details {
-  padding: 70px 0;
-  text-align: center; }
-  .details__title {
+.progress__2::before {
+  left: 40%; }
+
+.progress__3::before {
+  left: 37%; }
+
+.progress__4::before {
+  left: 25%; }
+
+.progress__big {
+  height: 30px;
+  margin-bottom: 20px; }
+  .progress__big::before {
+    content: ''; }
+
+.work__experience, .education {
+  padding: 20px; }
+  .work__experience h2, .education h2 {
     color: #757575;
-    font-weight: 500;
-    font-size: 36px;
-    margin-bottom: 40px; }
-  .details img {
-    margin-bottom: 30px;
-    width: 100%; }
-  .details__text {
-    font-size: 15px;
-    line-height: 2;
-    margin-bottom: 30px;
-    color: #757575;
-    font-style: italic;
-    text-align: left; }
-  .details__btn {
-    padding: 18px 24px;
-    background-color: #000;
-    display: inline-block;
-    background-color: #000;
+    font-weight: 700;
+    margin-bottom: 35px; }
+
+.experience__item, .education__item {
+  padding: 10px; }
+  .experience__item p, .education__item p {
+    margin-bottom: 15px; }
+  .experience__item button, .education__item button {
+    background-color: #009688;
     color: #fff;
-    font-size: 18px;
-    border-radius: 4px; }
-    .details__btn:hover {
-      color: #000;
-      background-color: #ccc; }
-
-.invitation {
-  background-image: url("./../images/flowers.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  padding: 200px 10px; }
-  .invitation__title {
-    margin-bottom: 40px;
-    font-size: 64px; }
-  .invitation__text {
-    font-size: 30px; }
-
-.wedding {
-  padding: 70px 0;
-  text-align: center; }
-  .wedding__title {
-    color: #757575;
-    font-weight: 500;
-    font-size: 36px;
-    margin-bottom: 70px;
-    text-transform: uppercase; }
-  .wedding img {
-    margin-bottom: 70px;
-    width: 100%; }
-  .wedding__block {
-    display: flex;
-    justify-content: space-around; }
-  .wedding__info h2 {
-    font-size: 30px;
-    margin-bottom: 30px; }
-  .wedding__info p {
-    margin-bottom: 30px; }
-
-.hope {
-  padding: 80px 10px;
-  text-align: center;
-  letter-spacing: 4px;
-  background-color: #f1bfbf; }
-  .hope__title {
-    font-size: 36px;
-    margin-bottom: 30px; }
-  .hope__text {
-    font-size: 18px;
-    margin-bottom: 30px; }
-  .hope__btn {
-    padding: 15px 40px;
-    display: inline-block;
-    background-color: #f44336;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 4px; }
-    .hope__btn:hover {
-      color: #000;
-      background-color: #ccc; }
+    padding: 5px 10px;
+    border-radius: 5px; }
 
 .footer {
-  background-color: #000;
-  color: #fff;
-  padding: 30px 0 60px;
+  padding: 15px 0;
   text-align: center;
-  font-size: 18px; }
-  .footer__link {
-    color: #fff;
-    text-decoration: underline; }
-    .footer__link:hover {
-      color: green; }
+  color: #fff; }
+  .footer p {
+    margin-bottom: 15px; }
+  .footer a {
+    color: #fff; }
+    .footer a i {
+      color: #fff; }
+      .footer a i:hover {
+        color: rgba(255, 255, 255, 0.7); }
+
+.social {
+  margin-bottom: 15px; }
+  .social a {
+    display: inline-block; }
+    .social a i {
+      margin: 0; }
+
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto 100px;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  grid-template-areas: "left__column work__experience" "left__column education" "footer footer"; }
+
+.left__column {
+  grid-area: left__column;
+  background-color: #fff;
+  box-shadow: 1px 2px 9px #333; }
+
+.work__experience {
+  grid-area: work__experience;
+  background-color: #fff;
+  box-shadow: 1px 2px 9px #333; }
+
+.education {
+  grid-area: education;
+  background-color: #fff;
+  box-shadow: 1px 2px 9px #333; }
+
+.footer {
+  grid-area: footer;
+  background-color: #009688; }
+
+@media (max-width: 601px) {
+  .main__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    grid-template-areas: "left__column" "work__experience" "education" "footer"; } }

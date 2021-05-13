@@ -1,0 +1,22 @@
+.work__experience, .education {
+  padding: 20px;
+  h2 {
+    @include subtitle(35px);
+  }
+}
+
+.experience__item, .education__item {
+  padding: 10px;
+  p {
+    margin-bottom: 15px;
+  }
+  button {
+    background-color: $main_color;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+
+
+

@@ -1,15 +1,28 @@
 .footer {
-  background-color: #000;
-  color: #fff;
-  padding: 30px 0 60px;
+  padding: 15px 0;
   text-align: center;
-  font-size: 18px;
-
-  &__link {
+  color: #fff;
+  p {
+    margin-bottom: 15px;
+  }
+  a {
     color: #fff;
-    text-decoration: underline;
-    &:hover {
-      color: green;
+    i {
+      color: #fff;
+      &:hover {
+        color: rgba(255, 255, 255, 0.7);
+      }
     }
   }
 }
+
+.social {
+  margin-bottom: 15px;
+  a {
+    display: inline-block;
+    i {
+      margin: 0;
+    }
+  }
+}
+
